@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		120DE886258FE6240012AA77 /* AttributedStringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE87C258FE6240012AA77 /* AttributedStringBuilder.framework */; };
-		120DE88B258FE6250012AA77 /* AttributedStringBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120DE88A258FE6250012AA77 /* AttributedStringBuilderTests.swift */; };
 		120DE88D258FE6250012AA77 /* AttributedStringBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 120DE87F258FE6240012AA77 /* AttributedStringBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		120DE89A258FE74E0012AA77 /* AttributedStringBuilder+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120DE898258FE74E0012AA77 /* AttributedStringBuilder+String.swift */; };
+		120DE89B258FE74E0012AA77 /* AttributedStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120DE899258FE74E0012AA77 /* AttributedStringBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,9 @@
 		120DE87F258FE6240012AA77 /* AttributedStringBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedStringBuilder.h; sourceTree = "<group>"; };
 		120DE880258FE6240012AA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		120DE885258FE6240012AA77 /* AttributedStringBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributedStringBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		120DE88A258FE6250012AA77 /* AttributedStringBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringBuilderTests.swift; sourceTree = "<group>"; };
 		120DE88C258FE6250012AA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120DE898258FE74E0012AA77 /* AttributedStringBuilder+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AttributedStringBuilder+String.swift"; sourceTree = "<group>"; };
+		120DE899258FE74E0012AA77 /* AttributedStringBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,8 @@
 		120DE87E258FE6240012AA77 /* AttributedStringBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				120DE899258FE74E0012AA77 /* AttributedStringBuilder.swift */,
+				120DE898258FE74E0012AA77 /* AttributedStringBuilder+String.swift */,
 				120DE87F258FE6240012AA77 /* AttributedStringBuilder.h */,
 				120DE880258FE6240012AA77 /* Info.plist */,
 			);
@@ -80,7 +84,7 @@
 		120DE889258FE6250012AA77 /* AttributedStringBuilderTests */ = {
 			isa = PBXGroup;
 			children = (
-				120DE88A258FE6250012AA77 /* AttributedStringBuilderTests.swift */,
+				120DE8A0258FE7AD0012AA77 /* AttributedBuilderTests.swift */,
 				120DE88C258FE6250012AA77 /* Info.plist */,
 			);
 			path = AttributedStringBuilderTests;
@@ -147,6 +151,7 @@
 				TargetAttributes = {
 					120DE87B258FE6240012AA77 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					120DE884258FE6240012AA77 = {
 						CreatedOnToolsVersion = 12.0;
@@ -194,6 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				120DE89B258FE74E0012AA77 /* AttributedStringBuilder.swift in Sources */,
+				120DE89A258FE74E0012AA77 /* AttributedStringBuilder+String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				120DE88B258FE6250012AA77 /* AttributedStringBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +347,7 @@
 		120DE891258FE6250012AA77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MGKV9HT3U5;
@@ -357,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seruca.AttributedStringBuilder;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +373,7 @@
 		120DE892258FE6250012AA77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MGKV9HT3U5;
@@ -389,6 +398,7 @@
 		120DE894258FE6250012AA77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MGKV9HT3U5;
 				INFOPLIST_FILE = AttributedStringBuilderTests/Info.plist;
@@ -407,6 +417,7 @@
 		120DE895258FE6250012AA77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MGKV9HT3U5;
 				INFOPLIST_FILE = AttributedStringBuilderTests/Info.plist;
