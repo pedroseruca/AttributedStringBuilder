@@ -5,39 +5,45 @@
 [![CocoaPods compatible](https://img.shields.io/badge/Cocoapods-compatible-4BC51D.svg?style=flat)](https://cocoapods.org/pods/AttributedStringBuilder)
 [![License: MIT](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/pedroseruca/AttributedStringBuilder/blob/main/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/pedroseruca/AttributedStringBuilder)](https://github.com/pedroseruca/AttributedStringBuilder/graphs/contributors)
-[![GitHub tag](https://img.shields.io/github/release/pedroseruca/AttributedStringBuilder)]()
+[![GitHub tag](https://img.shields.io/github/release/pedroseruca/AttributedStringBuilder)](https://github.com/pedroseruca/AttributedStringBuilder/releases)
 
 > A strong type implementation for Swift AttributedStrings
 
-[Why?](#-why)
+- [Why?](#why-this-project)
+    - [Other motives to create this](#other-motives-to-create-this)
+        - [Improve](#improve)
+        - [Explore](#Explore)
+        - [Implement](#Implement)
 
-[Installation](#-installation)
+- [Installation](#installation)
 
-[Documentation](#-documentation)
+- [Documentation](#documentation)
+
+- [Inspired](#inspired)
+
+# Why this project?
 
 
+## Other motives to create this
 
-### Why? and what I'm trying to achieve with this project.
-// To do
-
-// improve:
-
+### Improve
 // documentaion
 
 // modularisation
 
-// explore:
-
+### Explore
 // new upcoming swift tools
 
 // cocoaPods
 
-// implement:
-
+### Implement
 // design patterns
 
-### Instalation
+# Instalation
 // To do
 
-### Documentation
+# Documentation
+// To do
+
+# Inspired
 // To do
